@@ -1,15 +1,286 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>台牌計算器</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/main.js"></script>
 </head>
+
 <body>
-    <h1>台牌</h1>
-    <p>testtttttt</p>
-    <p>testtttttt</p>
-    <p>testtttttt</p>
+    <div id="container">
+        <div id="calc">
+            <header>
+                <h1 class="title">台牌計算器</h1>
+            </header>
+
+            <div id="Board-container">
+                <div id="board">
+                    <div class="box" id="Um1"></div>
+                    <div class="box" id="Um2"></div>
+                    <div class="box" id="Um3"></div>
+                    <div class="box" id="Um4"></div>
+                    <div class="box" id="Um5"></div>
+                    <div class="box" id="Um6"></div>
+                    <div class="box" id="Um7"></div>
+                    <div class="box" id="Um8"></div>
+                    <div class="box" id="Um9"></div>
+                    <div class="box" id="Um10"></div>
+                    <div class="box" id="Um11"></div>
+                    <div class="box" id="Um12"></div>
+                    <div class="box" id="Um13"></div>
+                    <div class="box" id="Um14"></div>
+                    <div class="box" id="Um15"></div>
+                    <div class="box" id="Um16"></div>
+                    <div class="spacer-ming"></div>
+                    <div class="wu" id="Wu1">糊</div>
+
+                </div>
+                <div id="secondary-board">
+                    <div id="ming-board">
+                        <div class="ming-board-row">
+                            <div class="ming" id="Ming1" ;></div>
+                            <div class="ming" id="Ming2" ;></div>
+                            <div class="ming" id="Ming3" ;></div>
+                            <div class="gong" id="Gong1" >槓</div>
+                        </div>
+                        <div class="ming-board-row">
+                            <div class="ming" id="Ming4" ;></div>
+                            <div class="ming" id="Ming5" ;></div>
+                            <div class="ming" id="Ming6" ;></div>
+                            <div class="gong" id="Gong2" ;>槓</div>
+                        </div>
+                        <div class="ming-board-row">
+                            <div class="ming" id="Ming7" ;></div>
+                            <div class="ming" id="Ming8" ;></div>
+                            <div class="ming" id="Ming9" ;></div>
+                            <div class="gong" id="Gong3" ;>槓</div>
+                        </div>
+                        <div class="ming-board-row">
+                            <div class="ming" id="Ming10" ;></div>
+                            <div class="ming" id="Ming11" ;></div>
+                            <div class="ming" id="Ming12" ;></div>
+                            <div class="gong" id="Gong4" ;>槓</div>
+                        </div>
+                        <div class="ming-board-row">
+                            <div class="ming" id="Ming13" ;></div>
+                            <div class="ming" id="Ming14" ;></div>
+                            <div class="ming" id="Ming15" ;></div>
+                            <div class="gong" id="Gong5" ;>槓</div>
+                        </div>
+                    </div>
+                    <div class="output">
+                        "text here"
+                    </div>
+                    <div class="fa-board">
+                        <div class="fa-board-row">
+                            <div class="fa" id="Fa1" ;>花</div>
+                            <div class="fa" id="Fa2" ;>花</div>
+                            <div class="fa" id="Fa3" ;>花</div>
+                            <div class="fa" id="Fa4" ;>花</div>
+                        </div>
+                        <div class="fa-board-row">
+                            <div class="fa" id="Fa5" ;>花</div>
+                            <div class="fa" id="Fa6" ;>花</div>
+                            <div class="fa" id="Fa7" ;>花</div>
+                            <div class="fa" id="Fa8" ;>花</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="keyboard-container">
+                <div class="keyboard-row">
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+                    <button
+                        style="background-image: url('images/1B.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="1B"></button>
+                    <button
+                        style="background-image: url('images/2B.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="2B"></button>
+                    <button
+                        style="background-image: url('images/3B.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="3B"></button>
+                    <button
+                        style="background-image: url('images/4B.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="4B"></button>
+                    <button
+                        style="background-image: url('images/5B.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="5B"></button>
+                    <button
+                        style="background-image: url('images/6B.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="6B"></button>
+                    <button
+                        style="background-image: url('images/7B.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="7B"></button>
+                    <button
+                        style="background-image: url('images/8B.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="8B"></button>
+                    <button
+                        style="background-image: url('images/9B.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="9B"></button>
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+                </div>
+                <div class="keyboard-row">
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+                    <button
+                        style="background-image: url('images/1C.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="1C"></button>
+                    <button
+                        style="background-image: url('images/2C.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="2C"></button>
+                    <button
+                        style="background-image: url('images/3C.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="3C"></button>
+                    <button
+                        style="background-image: url('images/4C.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="4C"></button>
+                    <button
+                        style="background-image: url('images/5C.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="5C"></button>
+                    <button
+                        style="background-image: url('images/6C.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="6C"></button>
+                    <button
+                        style="background-image: url('images/7c.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="7C"></button>
+                    <button
+                        style="background-image: url('images/8C.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="8C"></button>
+                    <button
+                        style="background-image: url('images/9C.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="9C"></button>
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+                </div>
+                <div class="keyboard-row">
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+                    <button
+                        style="background-image: url('images/1D.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="1D"></button>
+                    <button
+                        style="background-image: url('images/2D.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="2D"></button>
+                    <button
+                        style="background-image: url('images/3D.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="3D"></button>
+                    <button
+                        style="background-image: url('images/4D.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="4D"></button>
+                    <button
+                        style="background-image: url('images/5D.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="5D"></button>
+                    <button
+                        style="background-image: url('images/6D.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="6D"></button>
+                    <button
+                        style="background-image: url('images/7D.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="7D"></button>
+                    <button
+                        style="background-image: url('images/8D.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="8D"></button>
+                    <button
+                        style="background-image: url('images/9D.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="9D"></button>
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+                </div>
+                <div class="keyboard-row">
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+                    <button
+                        style="background-image: url('images/east.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="East"></button>
+                    <button
+                        style="background-image: url('images/south.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="South"></button>
+                    <button
+                        style="background-image: url('images/west.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="West"></button>
+                    <button
+                        style="background-image: url('images/north.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="North"></button>
+                    <button
+                        style="background-image: url('images/red.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="Red"></button>
+                    <button
+                        style="background-image: url('images/green.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="Green"></button>
+                    <button
+                        style="background-image: url('images/white.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="White"></button>
+                    <button
+                        style="background-image: url('images/empty.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="Empty"></button>
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+                </div>
+                <div class="keyboard-row">
+
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+                    <button
+                        style="background-image: url('images/B1.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="B1"></button>
+                    <button
+                        style="background-image: url('images/B2.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="B2"></button>
+                    <button
+                        style="background-image: url('images/B3.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="B3"></button>
+                    <button
+                        style="background-image: url('images/B4.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="B4"></button>
+                    <button
+                        style="background-image: url('images/R1.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="R1"></button>
+                    <button
+                        style="background-image: url('images/R2.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="R2"></button>
+                    <button
+                        style="background-image: url('images/R3.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="R3"></button>
+                    <button
+                        style="background-image: url('images/R4.svg');background-size: contain; background-repeat: no-repeat;;"
+                        data-key="R4"></button>
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+
+                </div>
+                <div class="keyboard-row" id="last-keyboard-row" ;>
+                    <button data-key="Enter" class="wide-button" id="enter-button">Enter</button>
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+
+                    <button data-key="MingCheung" class="wide-button">明章</button>
+                    <div class="spacer-half"></div>
+                    <button data-key="UmCheung" class="wide-button">暗章</button>
+                    <div class="spacer-half"></div>
+                    <button data-key="FaCheung" class="wide-button">花</button>
+
+                    <button data-key="WuCheung" class="wide-button">糊牌</button>
+                    <div class="spacer-half"></div>
+                    <div class="spacer-half"></div>
+                    <button data-key="Delete" class="wide-button">Delete</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </body>
+
 </html>

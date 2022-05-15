@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html,
+body {
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#container {
+    display: flex;
+    background-color: black;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#calc {
+    width: 100%;
+    max-width: 750px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    border-bottom: 1px solid rgb(58, 58, 60);
+
+}
+
+.title {
+    color: gainsboro;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0.4rem 0 0.4rem 0;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#board-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    grid-gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#secondary-board {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+#ming-board {
+    justify-content: left;
+    flex: 1;
+}
+
+#output {
+    justify-content: left;
+    flex: 3;
+    color: gainsboro;
+}
+
+#fa-board {
+    justify-content: right;
+    flex: 1;
+}
+
+
+.ming-board-row {
+    display: flex;
+    justify-content: left;
+    margin: 0 auto 8px;
+}
+
+
+
+.wu {
+    border: 2px solid rgb(58, 58, 60);
+    min-width: 32px;
+    min-height: 40px;
+    transform: rotate(90deg);
+    font-size: 0.5rem;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.box {
+    border: 2px solid rgb(58, 58, 60);
+    min-width: 32px;
+    min-height: 40px;
+    font-size: 0.5rem;
+    color: aliceblue;
+    font-weight: bold;
+
+
+    color: gainsboro;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ming {
+    border: 2px solid rgb(58, 58, 60);
+    min-width: 32px;
+    min-height: 40px;
+    font-size: 0.5rem;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+
+.gong {
+    border: 2px solid rgb(58, 58, 60);
+
+    min-width: 32px;
+    min-height: 40px;
+    font-size: 0.5rem;
+    color: aliceblue;
+    touch-action: manipulation;
+}
+
+.fa-board-row {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin: 0 auto 8px;
+}
+
+.fa {
+
+    border: 2px solid rgb(58, 58, 60);
+    min-width: 32px;
+    min-height: 40px;
+    font-size: 0.5rem;
+    color: aliceblue;
+    font-weight: normal;
+}
+
+
+
+#keyboard-container {
+    height: 500px;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 8px;
+    touch-action: manipulation;
+}
+
+.keyboard-row button {
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    background-color: black;
+    background-size: auto;
+    flex-grow: 0.5;
+    margin-right: 6px;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.keyboard-row button.wide-button {
+    flex-grow: 0.5;
+    background-color: gainsboro;
+    color: rgb(16, 145, 49);
+    align-items: center;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    height: 25px;
+
+}
+
+#last-keyboard-row {
+    height: 25px;
+}
+
+.spacer-half {
+    flex-grow: 0.5;
+}
