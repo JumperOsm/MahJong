@@ -19,6 +19,7 @@ body {
     width: 100%;
     align-items: center;
     flex-direction: column;
+
 }
 
 
@@ -134,32 +135,55 @@ header {
 }
 
 
-@media screen and (min-width: 540px)  {
-    .gong, .fa, .ming , .box ,.output-tile , .wu {
+@media screen and (min-width: 540px) {
+
+    .gong,
+    .fa,
+    .ming,
+    .box,
+    .output-tile,
+    .wu {
         min-width: 32px;
         min-height: 40px;
     }
+
     .keyboard-row button {
         height: 50px;
     }
 }
 
-@media screen and (max-width: 540px)  {
-    .gong, .fa, .ming , .box ,.output-tile , .wu {
+@media screen and (max-width: 540px) {
+
+    .gong,
+    .fa,
+    .ming,
+    .box,
+    .output-tile,
+    .wu {
         min-width: 16px;
         min-height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
     .keyboard-row button {
         height: 40px;
     }
-    #output{
+
+    #output {
         font-size: 0.5rem;
     }
 }
 
 
 
-.gong, .fa, .ming , .box ,.output-tile , .wu {
+.gong,
+.fa,
+.ming,
+.box,
+.output-tile,
+.wu {
     border: 2px solid rgb(58, 58, 60);
     font-weight: normal;
     font-size: 0.5rem;
@@ -202,7 +226,7 @@ header {
     font-weight: bold;
     border: 0;
     padding: 0;
-    
+
     cursor: pointer;
     display: flex;
     background-color: black;
@@ -274,24 +298,26 @@ header {
     border-top: none;
 }
 
-.finalComboA{
+.finalComboA {
     display: flex;
     flex-wrap: wrap;
 }
 
-.finalComboACalc{
+.finalComboACalc {
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: 100%; display: flex;
+    flex-basis: 100%;
+    display: flex;
     border: 1px solid rgb(51, 51, 51);
 }
 
-.finalComboACalc > div{
+.finalComboACalc>div {
     flex: 1 1 25%
 }
 
-.total, .totalsum{
-    color:  yellow;
+.total,
+.totalsum {
+    color: yellow;
 }
 
 #Table {
@@ -342,10 +368,11 @@ td.sub-header {
     display: none;
 }
 
-#Export{
+#Export {
     font-size: 5px;
 }
 
-.sum, .c_sum{
+.sum,
+.c_sum {
     text-align: center;
 }
