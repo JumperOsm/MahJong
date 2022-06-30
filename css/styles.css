@@ -129,8 +129,8 @@ header {
 
 .box {
     border: 2px solid rgb(58, 58, 60);
-    min-width: 24px;
-    min-height: 30px;
+    min-width: 32px;
+    min-height: 40px;
     font-size: 0.5rem;
     color: aliceblue;
     font-weight: bold;
@@ -150,7 +150,7 @@ header {
 }
 
 .spacer {
-    width: 30px
+    width: 40px
 }
 
 .newset {
@@ -159,8 +159,8 @@ header {
 
 .output-tile {
     border: 2px solid rgb(58, 58, 60);
-    min-width: 24px;
-    min-height: 30px;
+    min-width: 32px;
+    min-height: 40px;
     font-size: 0.5rem;
     color: aliceblue;
     font-weight: bold;
@@ -176,8 +176,8 @@ header {
 
 .ming {
     border: 2px solid rgb(58, 58, 60);
-    min-width: 24px;
-    min-height: 30px;
+    min-width: 32px;
+    min-height: 40px;
     font-size: 0.5rem;
     color: aliceblue;
     font-weight: bold;
@@ -188,8 +188,8 @@ header {
 .gong {
     border: 2px solid rgb(58, 58, 60);
 
-    min-width: 24px;
-    min-height: 30px;
+    min-width: 32px;
+    min-height: 40px;
     font-size: 0.5rem;
     color: aliceblue;
     touch-action: manipulation;
@@ -205,8 +205,8 @@ header {
 .fa {
 
     border: 2px solid rgb(58, 58, 60);
-    min-width: 24px;
-    min-height: 30px;
+    min-width: 32px;
+    min-height: 40px;
     font-size: 0.5rem;
     color: aliceblue;
     font-weight: normal;
@@ -283,7 +283,7 @@ header {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 24px;
+    padding: 14px 32px;
     transition: 0.3s;
     color: gainsboro;
 }
@@ -357,7 +357,7 @@ td.sub-header {
 }
 
 .gongInput {
-    width: 30px;
+    width: 40px;
 }
 
 .cbCell {
@@ -371,7 +371,7 @@ td.sub-header {
     text-align: center;
     background-color: grey;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 40px;
     display: none;
 }
 
