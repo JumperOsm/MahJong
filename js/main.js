@@ -324,6 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             //now workingTile don't have eye
             posCombo = findAllPosCombo(workingTile)
+            console.log(posCombo)
             //console.table(posCombo)
             let kan = workingTile.length / 3
 
@@ -415,7 +416,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (document.getElementById("自摸").checked) {
             wuWay = "自摸"
             console.log(wuWay)
-        } else if (document.getElementById("出統").checked) {
+        } else {
             wuWay = "出統";
             console.log(wuWay)
         }
@@ -964,6 +965,7 @@ document.addEventListener("DOMContentLoaded", () => {
             calcDiv.innerHTML += '<div>莊連</div><div class="c_sum">' + (+((document.getElementById('莊連').value) * 2) + 1) + '</div>';
         }
 
+        console.log(ming.length)
         if (ming.length === 0) {
             門清 = true
         }
@@ -984,13 +986,14 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
+        console.log(specialWu)
         if (門清 === true) {
             if (自摸 !== true && 聽 !== true) {
                 populateFarn('門清', calcDiv, 1)
             }
-            if (自摸 === true && specialWu === 'No') {
+            if (自摸 === true && specialWu === 'no') {
                 populateFarn('門清自摸', calcDiv, 1)
-            } else {
+            } else if(自摸 === true){
                 //奇牌必須門清
                 populateFarn('自摸', calcDiv, 1)
             }
@@ -1479,7 +1482,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 arr = []
                 n = +(i.substring(0, 1))
                 t = i.substring(1, 2)
-                if (tempArr.includes((n + 8) + t)) {
+                if (tempArr.includes((n + 8) + t) && i !== temp && ((n + 8) + t) !== temp) {
                     populateFarn('老少碰', calcDiv, 1, [i + ', ' + ((n + 8) + t)])
                 }
                 if (tempArr.includes((n + 1) + t)) {
@@ -1968,7 +1971,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
 
             if (arr.length === 2) {
-                populateFarn('二暗刻', calcDiv, 1)
+                populateFarn('兩暗刻', calcDiv, 1)
             }
             if (arr.length === 3) {
                 populateFarn('三暗刻', calcDiv, 1)
