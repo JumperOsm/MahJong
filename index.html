@@ -43,24 +43,24 @@
                 <div id="Board-container">
 
                     <div id="board">
-                        <div class="box" id="Um1" tile="None" ></div>
-                        <div class="box" id="Um2" tile="None" ></div>
-                        <div class="box" id="Um3" tile="None" ></div>
-                        <div class="box" id="Um4" tile="None" ></div>
-                        <div class="box" id="Um5" tile="None" ></div>
-                        <div class="box" id="Um6" tile="None" ></div>
-                        <div class="box" id="Um7" tile="None" ></div>
-                        <div class="box" id="Um8" tile="None" ></div>
-                        <div class="box" id="Um9" tile="None" ></div>
-                        <div class="box" id="Um10" tile="None" ></div>
-                        <div class="box" id="Um11" tile="None" ></div>
-                        <div class="box" id="Um12" tile="None" ></div>
-                        <div class="box" id="Um13" tile="None" ></div>
-                        <div class="box" id="Um14" tile="None" ></div>
-                        <div class="box" id="Um15" tile="None" ></div>
-                        <div class="box" id="Um16" tile="None" ></div>
+                        <div class="box" id="Um1" tile="None"></div>
+                        <div class="box" id="Um2" tile="None"></div>
+                        <div class="box" id="Um3" tile="None"></div>
+                        <div class="box" id="Um4" tile="None"></div>
+                        <div class="box" id="Um5" tile="None"></div>
+                        <div class="box" id="Um6" tile="None"></div>
+                        <div class="box" id="Um7" tile="None"></div>
+                        <div class="box" id="Um8" tile="None"></div>
+                        <div class="box" id="Um9" tile="None"></div>
+                        <div class="box" id="Um10" tile="None"></div>
+                        <div class="box" id="Um11" tile="None"></div>
+                        <div class="box" id="Um12" tile="None"></div>
+                        <div class="box" id="Um13" tile="None"></div>
+                        <div class="box" id="Um14" tile="None"></div>
+                        <div class="box" id="Um15" tile="None"></div>
+                        <div class="box" id="Um16" tile="None"></div>
                         <div class="spacer-ming"></div>
-                        <div class="wu" id="Wu1" >胡</div>
+                        <div class="wu" id="Wu1">胡</div>
 
                     </div>
                     <div id="secondary-board">
@@ -79,7 +79,7 @@
                             </div>
                             <div class="ming-board-row">
                                 <div class="ming" id="Ming7" tile="None" ;></div>
-                                <div class="ming" id="Ming8" tile="None"  ;></div>
+                                <div class="ming" id="Ming8" tile="None" ;></div>
                                 <div class="ming" id="Ming9" tile="None" ;></div>
                                 <div class="gong" id="Gong3" gongStatus="No" tile="None">槓</div>
                             </div>
@@ -132,7 +132,7 @@
                                 <label for="place">位</label>
                             </div>
                             <div id="for自摸">
-                                <input type="number" id="莊連"value="-1" class="gongInput" >
+                                <input type="number" id="莊連" value="-1" class="gongInput">
                                 <label for="莊連">莊連(-1=非莊)</label>
                             </div>
                             <div>
@@ -147,7 +147,7 @@
                                     <option value="獨獨">獨獨</option>
                                     <option value="假獨">假獨</option>
                                 </select>
-                            
+
                             </div>
                             <div>
                                 <label for="wuSpeed">時序</label>
@@ -162,7 +162,7 @@
                                     <option value="河底撈月">河底撈月</option>
                                     <option value="海底撈月">海底撈月</option>
                                 </select>
-                                
+
                             </div>
                             <div>
                                 <label for="聽牌">聽牌</label>
@@ -179,7 +179,7 @@
                                 <input type="checkbox" id="搶槓">
                             </div>
                             <div id="for自摸">
-                                <input type="number" id="花上"value="0" class="gongInput" >
+                                <input type="number" id="花上" value="0" class="gongInput">
                                 <label for="花上">花</label>
                                 <input type="number" id="槓上" value="0" class="gongInput">
                                 <label for="槓上">槓上摸</label>
@@ -370,13 +370,13 @@
                             <div class="spacer-half"></div>
                             <div class="spacer-half"></div>
 
-                            
+
                             <div class="spacer-half"></div>
                             <div class="spacer-half"></div>
                             <div class="spacer-half"></div>
                             <button data-key="Reset" class="wide-button">Reset</button>
                             <div class="spacer-half"></div>
-                            
+
                             <div class="spacer-half"></div>
                             <div class="spacer-half"></div>
                             <div class="spacer-half"></div>
@@ -418,18 +418,18 @@
 
             <div id="Table" class="tabcontent">
                 <div id="buttons-holder">
-                <button id="ExportButton" class="big-button">Export</button>
-                
-                <div id="ImportExportOverLay" >
-                    <div>請另外保全以下字串</div>
-                    <div id="Export"></div>
-                    <div>請輸入記錄</div>
-                    <div>
-                        <input id="Import" width="100%"/>
+                    <button id="ExportButton" class="big-button">Export</button>
+
+                    <div id="ImportExportOverLay">
+                        <div>請另外保全以下字串</div>
+                        <div id="Export"></div>
+                        <div>請輸入記錄</div>
+                        <div>
+                            <input id="Import" width="100%" />
+                        </div>
+                        <button id="confirmButton" class="overlay-button">Confirm</button>
+                        <button id="closeButton" class="overlay-button">Close</button>
                     </div>
-                    <button id="confirmButton" class="overlay-button">Confirm</button>
-                    <button id="closeButton" class="overlay-button">Close</button>
-                </div>
                 </div>
                 <div id="table-container">
                     <table id="farn-table">
@@ -874,7 +874,7 @@
                             <td rowspan="5">同順</td>
                             <td>般高</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="般高m" class="MU" checked="checked"/>
+                                <input type="checkbox" id="般高m" class="MU" checked="checked" />
                             </td>
                             <td class="farnNumber" id="般高f">5</td>
                             <td>相同的順子。如有三/四般高，須以𝐶2
@@ -887,10 +887,10 @@
                         <tr>
                             <td>小雙般高</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="小雙般高y" class="YN" checked="checked"/>
+                                <input type="checkbox" id="小雙般高y" class="YN" checked="checked" />
                             </td>
                             <td class="cbCell">
-                                <input type="checkbox" id="小雙般高m" class="MU" checked="checked"/>
+                                <input type="checkbox" id="小雙般高m" class="MU" checked="checked" />
                             </td>
                             <td class="farnNumber" id="小雙般高f">10</td>
                             <td>般高加上相連的數字為眼</td>
@@ -911,7 +911,7 @@
                         <tr>
                             <td>三相逢(順子)</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="三相逢m" class="MU" checked="checked"/>
+                                <input type="checkbox" id="三相逢m" class="MU" checked="checked" />
                             </td>
                             <td class="farnNumber" id="三相逢f">10</td>
                             <td>由筒索萬三門組成三組相同數字的順子</td>
@@ -922,7 +922,7 @@
                         <tr>
                             <td>全姊妹</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="全姊妹y" class="YN" checked="checked"/>
+                                <input type="checkbox" id="全姊妹y" class="YN" checked="checked" />
                             </td>
                             <td></td>
                             <td class="farnNumber" id="全姊妹f">20</td>
@@ -937,10 +937,10 @@
                             <td rowspan="6">步高．龍</td>
                             <td>步步高</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="步步高y" class="YN" checked="checked"/>
+                                <input type="checkbox" id="步步高y" class="YN" checked="checked" />
                             </td>
                             <td class="cbCell">
-                                <input type="checkbox" id="步步高m" class="MU" checked="checked"/>
+                                <input type="checkbox" id="步步高m" class="MU" checked="checked" />
                             </td>
                             <td class="farnNumber" id="步步高f">5</td>
                             <td>由筒索萬三門組成的三組數字差同為一的連續順子。</td>
@@ -968,7 +968,7 @@
                             <td>雜龍</td>
                             <td></td>
                             <td class="cbCell">
-                                <input type="checkbox" id="雜龍m" class="MU" checked="checked"/>
+                                <input type="checkbox" id="雜龍m" class="MU" checked="checked" />
                             </td>
                             <td class="farnNumber" id="雜龍f">5</td>
                             <td>由筒索萬三門組成的三組數字差同為三的連續順子。</td>
@@ -979,10 +979,10 @@
                         <tr>
                             <td>同色步步高</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="同色步步高y" class="YN" checked="checked"/>
+                                <input type="checkbox" id="同色步步高y" class="YN" checked="checked" />
                             </td>
                             <td class="cbCell">
-                                <input type="checkbox" id="同色步步高m" class="MU" checked="checked"/>
+                                <input type="checkbox" id="同色步步高m" class="MU" checked="checked" />
                             </td>
                             <td class="farnNumber" id="同色步步高f">10</td>
                             <td>由筒索萬其中一門組成的三組數字差同為一的連續順子</td>
@@ -1008,7 +1008,7 @@
                             <td>清龍</td>
                             <td></td>
                             <td class="cbCell">
-                                <input type="checkbox" id="清龍m" class="MU" checked="checked"/>
+                                <input type="checkbox" id="清龍m" class="MU" checked="checked" />
                             </td>
                             <td class="farnNumber" id="清龍f">10</td>
                             <td>由筒索萬其中一門組成的三組數字差同為三的連續順子</td>
@@ -1127,7 +1127,7 @@
                         <tr>
                             <td>小雜連碰</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="小雜連碰y" class="YN" checked="checked"/>
+                                <input type="checkbox" id="小雜連碰y" class="YN" checked="checked" />
                             </td>
                             <td class="farnNumber" id="小雜連碰f">5</td>
                             <td>由筒索萬三門組成連續數字的刻子、槓子或眼</td>
@@ -1138,7 +1138,7 @@
                         <tr>
                             <td>雜連碰</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="雜連碰y" class="YN" checked="checked"/>
+                                <input type="checkbox" id="雜連碰y" class="YN" checked="checked" />
                             </td>
                             <td class="farnNumber" id="雜連碰f">10</td>
                             <td>由筒索萬三門組成連續數字的刻子或槓子</td>
@@ -1230,7 +1230,7 @@
                             <td>四歸一</td>
                             <td rowspan="3"></td>
                             <td class="cbCell">
-                                <input type="checkbox" id="四歸一m" class="MU" checked="checked"/>
+                                <input type="checkbox" id="四歸一m" class="MU" checked="checked" />
                             </td>
                             <td class="farnNumber" id="四歸一f">5</td>
                             <td>胡牌組合有四隻相同的牌，並出現在一組順子及一組刻子內</td>
@@ -1241,7 +1241,7 @@
                         <tr>
                             <td>四歸二</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="四歸二m" class="MU" checked="checked"/>
+                                <input type="checkbox" id="四歸二m" class="MU" checked="checked" />
                             </td>
                             <td class="farnNumber" id="四歸二f">10</td>
                             <td>胡牌組合有四隻相同的牌，並出現在兩組順子及眼內</td>
@@ -1252,7 +1252,7 @@
                         <tr>
                             <td>四歸四</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="四歸四m" class="MU" checked="checked"/>
+                                <input type="checkbox" id="四歸四m" class="MU" checked="checked" />
                             </td>
                             <td class="farnNumber" id="四歸四f">20</td>
                             <td>胡牌組合有四隻相同的牌，並出現在四組順子內。</td>
@@ -1289,7 +1289,7 @@
                         <tr>
                             <td>缺五</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="缺五y" class="YN" checked="checked"/>
+                                <input type="checkbox" id="缺五y" class="YN" checked="checked" />
                             </td>
                             <td class="farnNumber" id="缺五f">10</td>
                             <td>胡牌組合中沒有風元牌、五筒、五索及五萬</td>
@@ -1312,7 +1312,7 @@
                         <tr>
                             <td>大五門齊</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="大五門齊y" class="YN" checked="checked"/>
+                                <input type="checkbox" id="大五門齊y" class="YN" checked="checked" />
                             </td>
                             <td class="farnNumber" id="大五門齊f">15</td>
                             <td>胡牌組合中有筒索萬三門、風牌及元牌。</td>
@@ -1332,7 +1332,7 @@
                         <tr>
                             <td>大七門齊</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="大七門齊y" class="YN" checked="checked"/>
+                                <input type="checkbox" id="大七門齊y" class="YN" checked="checked" />
                             </td>
                             <td class="farnNumber" id="大七門齊f">20</td>
                             <td>為大五門齊加上兩類花牌</td>
@@ -1373,7 +1373,7 @@
                             <td rowspan="2">帶</td>
                             <td>混帶</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="混帶y" class="YN" checked="checked"/>
+                                <input type="checkbox" id="混帶y" class="YN" checked="checked" />
                             </td>
                             <td class="farnNumber" id="混帶f">30</td>
                             <td>胡牌組合中只有風元牌及每一組牌組均含有同一個數字的非風
@@ -1385,7 +1385,7 @@
                         <tr>
                             <td>全帶</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="全帶y" class="YN" checked="checked"/>
+                                <input type="checkbox" id="全帶y" class="YN" checked="checked" />
                             </td>
                             <td class="farnNumber" id="全帶f">60</td>
                             <td>胡牌組合中沒有風元牌，且每一組牌組均含有同一個數字的
@@ -1411,7 +1411,7 @@
                         <tr>
                             <td>全大</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="全大y" class="YN" checked="checked"/>
+                                <input type="checkbox" id="全大y" class="YN" checked="checked" />
                             </td>
                             <td class="farnNumber" id="全大f">60</td>
                             <td>胡牌組合中沒有風元牌，及所有牌只以「六」、「七」、「八」或
@@ -1435,7 +1435,7 @@
                         <tr>
                             <td>全小</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="全小y" class="YN" checked="checked"/>
+                                <input type="checkbox" id="全小y" class="YN" checked="checked" />
                             </td>
                             <td class="farnNumber" id="全小f">60</td>
                             <td>胡牌組合中沒有風元牌，及所有牌只以「一」、「二」、「三」或
@@ -1620,7 +1620,7 @@
                         <tr>
                             <td>嚦咕嚦咕四歸一</td>
                             <td class="cbCell">
-                                <input type="checkbox" id="嚦咕嚦咕四歸一y" class="YN" checked="checked"/>
+                                <input type="checkbox" id="嚦咕嚦咕四歸一y" class="YN" checked="checked" />
                             </td>
                             <td class="farnNumber" id="嚦咕嚦咕四歸一f">10</td>
                             <td>嚦咕有兩對為同一隻牌</td>

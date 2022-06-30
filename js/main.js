@@ -939,7 +939,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                     //小三元
                     if (['Green', 'Red', 'White'].includes(eye)) {
-                        if (larr.includes('Green') && larr.includes('Red') && larr.includes('White') ) {
+                        if (larr.includes('Green') && larr.includes('Red') && larr.includes('White')) {
                             populateFarn('嚦咕嚦咕小三元', calcDiv, 1)
                         }
                     }
@@ -993,7 +993,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             if (自摸 === true && specialWu === 'no') {
                 populateFarn('門清自摸', calcDiv, 1)
-            } else if(自摸 === true){
+            } else if (自摸 === true) {
                 //奇牌必須門清
                 populateFarn('自摸', calcDiv, 1)
             }
@@ -2020,15 +2020,15 @@ document.addEventListener("DOMContentLoaded", () => {
             if (umCombo === combo) {
                 temp2 = true
             }
-            if (specialWu !== 'liguOnly'){
-            if (combo === 2) {
-                populateFarn('四歸一', calcDiv, 1, [i], temp2)
-            } else if (combo === 3) {
-                populateFarn('四歸二', calcDiv, 1, [i], temp2)
-            } else if (combo === 4) {
-                populateFarn('四歸四', calcDiv, 1, [i], temp2)
+            if (specialWu !== 'liguOnly') {
+                if (combo === 2) {
+                    populateFarn('四歸一', calcDiv, 1, [i], temp2)
+                } else if (combo === 3) {
+                    populateFarn('四歸二', calcDiv, 1, [i], temp2)
+                } else if (combo === 4) {
+                    populateFarn('四歸四', calcDiv, 1, [i], temp2)
+                }
             }
-        }
         })
 
         let sum = 0
