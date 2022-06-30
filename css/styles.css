@@ -117,34 +117,9 @@ header {
 
 
 
-.wu {
-    border: 2px solid rgb(58, 58, 60);
-    min-width: 1.6vh;
-    min-height: 2vh;
-    transform: rotate(90deg);
-    font-size: 0.5rem;
-    color: aliceblue;
-    font-weight: bold;
-    touch-action: manipulation;
-}
-
-.box {
-    border: 2px solid rgb(58, 58, 60);
-    min-width: 1.6vh;
-    min-height: 2vh;
-    font-size: 0.5rem;
-    color: aliceblue;
-    font-weight: bold;
-    touch-action: manipulation;
 
 
-    color: gainsboro;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
 
 .finalComboA {
     display: flex;
@@ -158,42 +133,23 @@ header {
     display: flex;
 }
 
-.output-tile {
+
+
+
+
+
+.gong, .fa, .ming , .box ,.output-tile , .wu {
     border: 2px solid rgb(58, 58, 60);
-    min-width: 1.6vh;
-    min-height: 2vh;
-    font-size: 0.5rem;
-    color: aliceblue;
-    font-weight: bold;
-
-
-    color: gainsboro;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.ming {
-    border: 2px solid rgb(58, 58, 60);
-    min-width: 1.6vh;
-    min-height: 2vh;
-    font-size: 0.5rem;
-    color: aliceblue;
-    font-weight: bold;
-    touch-action: manipulation;
-}
-
-
-.gong {
-    border: 2px solid rgb(58, 58, 60);
-
-    min-width: 1.6vh;
-    min-height: 2vh;
+    font-weight: normal;
+    min-width: 32px;
+    min-height: 40px;
     font-size: 0.5rem;
     color: aliceblue;
     touch-action: manipulation;
+}
+
+.wu {
+    transform: rotate(90deg);
 }
 
 .fa-board-row {
@@ -203,16 +159,7 @@ header {
     margin: 0 auto 8px;
 }
 
-.fa {
 
-    border: 2px solid rgb(58, 58, 60);
-    min-width: 1.6vh;
-    min-height: 2vh;
-    font-size: 0.5rem;
-    color: aliceblue;
-    font-weight: normal;
-    touch-action: manipulation;
-}
 
 
 
