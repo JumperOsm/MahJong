@@ -1613,7 +1613,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
 
-        if (specialWu === 'none' || specialWu === 'ligu') {
+        if (specialWu === 'no' || specialWu === 'ligu') {
             let 般高 = false
 
             arr = []
@@ -2297,7 +2297,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 break;
             case 'Ming':
                 document.getElementById(clicked_id).setAttribute('gongStatus', "Um");
-                document.getElementById(clicked_id).style.backgroundImage = 'url(images/back.svg)';
+                document.getElementById(clicked_id).style.backgroundImage = 'url(images/Back.svg)';
                 break;
             case 'Um':
                 document.getElementById(clicked_id).setAttribute('gongStatus', "No");
