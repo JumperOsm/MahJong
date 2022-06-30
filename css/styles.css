@@ -7,6 +7,7 @@
 html,
 body {
     height: 100%;
+    width: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
@@ -118,8 +119,8 @@ header {
 
 .wu {
     border: 2px solid rgb(58, 58, 60);
-    min-width: 32px;
-    min-height: 40px;
+    min-width: 1.6vh;
+    min-height: 2vh;
     transform: rotate(90deg);
     font-size: 0.5rem;
     color: aliceblue;
@@ -129,8 +130,8 @@ header {
 
 .box {
     border: 2px solid rgb(58, 58, 60);
-    min-width: 32px;
-    min-height: 40px;
+    min-width: 1.6vh;
+    min-height: 2vh;
     font-size: 0.5rem;
     color: aliceblue;
     font-weight: bold;
@@ -159,8 +160,8 @@ header {
 
 .output-tile {
     border: 2px solid rgb(58, 58, 60);
-    min-width: 32px;
-    min-height: 40px;
+    min-width: 1.6vh;
+    min-height: 2vh;
     font-size: 0.5rem;
     color: aliceblue;
     font-weight: bold;
@@ -176,8 +177,8 @@ header {
 
 .ming {
     border: 2px solid rgb(58, 58, 60);
-    min-width: 32px;
-    min-height: 40px;
+    min-width: 1.6vh;
+    min-height: 2vh;
     font-size: 0.5rem;
     color: aliceblue;
     font-weight: bold;
@@ -188,8 +189,8 @@ header {
 .gong {
     border: 2px solid rgb(58, 58, 60);
 
-    min-width: 32px;
-    min-height: 40px;
+    min-width: 1.6vh;
+    min-height: 2vh;
     font-size: 0.5rem;
     color: aliceblue;
     touch-action: manipulation;
@@ -205,8 +206,8 @@ header {
 .fa {
 
     border: 2px solid rgb(58, 58, 60);
-    min-width: 32px;
-    min-height: 40px;
+    min-width: 1.6vh;
+    min-height: 2vh;
     font-size: 0.5rem;
     color: aliceblue;
     font-weight: normal;
@@ -235,7 +236,7 @@ header {
     font-weight: bold;
     border: 0;
     padding: 0;
-    height: 50px;
+    height: 40px;
     cursor: pointer;
     display: flex;
     background-color: black;
