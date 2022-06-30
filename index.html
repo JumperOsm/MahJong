@@ -11,273 +11,1776 @@
 </head>
 
 <body>
+
+
+
+
+
     <div id="container">
         <div id="calc">
             <header>
                 <h1 class="title">台牌計算器</h1>
             </header>
 
-            <div id="Board-container">
-                <div id="board">
-                    <div class="box" id="Um1"></div>
-                    <div class="box" id="Um2"></div>
-                    <div class="box" id="Um3"></div>
-                    <div class="box" id="Um4"></div>
-                    <div class="box" id="Um5"></div>
-                    <div class="box" id="Um6"></div>
-                    <div class="box" id="Um7"></div>
-                    <div class="box" id="Um8"></div>
-                    <div class="box" id="Um9"></div>
-                    <div class="box" id="Um10"></div>
-                    <div class="box" id="Um11"></div>
-                    <div class="box" id="Um12"></div>
-                    <div class="box" id="Um13"></div>
-                    <div class="box" id="Um14"></div>
-                    <div class="box" id="Um15"></div>
-                    <div class="box" id="Um16"></div>
-                    <div class="spacer-ming"></div>
-                    <div class="wu" id="Wu1">糊</div>
 
-                </div>
-                <div id="secondary-board">
-                    <div id="ming-board">
-                        <div class="ming-board-row">
-                            <div class="ming" id="Ming1" ;></div>
-                            <div class="ming" id="Ming2" ;></div>
-                            <div class="ming" id="Ming3" ;></div>
-                            <div class="gong" id="Gong1" >槓</div>
-                        </div>
-                        <div class="ming-board-row">
-                            <div class="ming" id="Ming4" ;></div>
-                            <div class="ming" id="Ming5" ;></div>
-                            <div class="ming" id="Ming6" ;></div>
-                            <div class="gong" id="Gong2" ;>槓</div>
-                        </div>
-                        <div class="ming-board-row">
-                            <div class="ming" id="Ming7" ;></div>
-                            <div class="ming" id="Ming8" ;></div>
-                            <div class="ming" id="Ming9" ;></div>
-                            <div class="gong" id="Gong3" ;>槓</div>
-                        </div>
-                        <div class="ming-board-row">
-                            <div class="ming" id="Ming10" ;></div>
-                            <div class="ming" id="Ming11" ;></div>
-                            <div class="ming" id="Ming12" ;></div>
-                            <div class="gong" id="Gong4" ;>槓</div>
-                        </div>
-                        <div class="ming-board-row">
-                            <div class="ming" id="Ming13" ;></div>
-                            <div class="ming" id="Ming14" ;></div>
-                            <div class="ming" id="Ming15" ;></div>
-                            <div class="gong" id="Gong5" ;>槓</div>
-                        </div>
-                    </div>
-                    <div class="output">
-                        "text here"
-                    </div>
-                    <div class="fa-board">
-                        <div class="fa-board-row">
-                            <div class="fa" id="Fa1" ;>花</div>
-                            <div class="fa" id="Fa2" ;>花</div>
-                            <div class="fa" id="Fa3" ;>花</div>
-                            <div class="fa" id="Fa4" ;>花</div>
-                        </div>
-                        <div class="fa-board-row">
-                            <div class="fa" id="Fa5" ;>花</div>
-                            <div class="fa" id="Fa6" ;>花</div>
-                            <div class="fa" id="Fa7" ;>花</div>
-                            <div class="fa" id="Fa8" ;>花</div>
-                        </div>
-                    </div>
+            <div id="Tab-container">
+
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'Calc')" id="defaultOpen">主頁</button>
+                    <button class="tablinks" onclick="openTab(event, 'Output')">所有組合</button>
+                    <button class="tablinks" onclick="openTab(event, 'Table')">番表</button>
+                    <button class="tablinks" onclick="openTab(event, 'About')">關於</button>
                 </div>
             </div>
 
+            <!-- Tab content -->
+            <div id="Calc" class="tabcontent">
 
-            <div id="keyboard-container">
-                <div class="keyboard-row">
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
-                    <button
-                        style="background-image: url('images/1B.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="1B"></button>
-                    <button
-                        style="background-image: url('images/2B.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="2B"></button>
-                    <button
-                        style="background-image: url('images/3B.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="3B"></button>
-                    <button
-                        style="background-image: url('images/4B.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="4B"></button>
-                    <button
-                        style="background-image: url('images/5B.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="5B"></button>
-                    <button
-                        style="background-image: url('images/6B.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="6B"></button>
-                    <button
-                        style="background-image: url('images/7B.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="7B"></button>
-                    <button
-                        style="background-image: url('images/8B.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="8B"></button>
-                    <button
-                        style="background-image: url('images/9B.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="9B"></button>
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
-                </div>
-                <div class="keyboard-row">
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
-                    <button
-                        style="background-image: url('images/1C.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="1C"></button>
-                    <button
-                        style="background-image: url('images/2C.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="2C"></button>
-                    <button
-                        style="background-image: url('images/3C.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="3C"></button>
-                    <button
-                        style="background-image: url('images/4C.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="4C"></button>
-                    <button
-                        style="background-image: url('images/5C.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="5C"></button>
-                    <button
-                        style="background-image: url('images/6C.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="6C"></button>
-                    <button
-                        style="background-image: url('images/7c.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="7C"></button>
-                    <button
-                        style="background-image: url('images/8C.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="8C"></button>
-                    <button
-                        style="background-image: url('images/9C.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="9C"></button>
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
-                </div>
-                <div class="keyboard-row">
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
-                    <button
-                        style="background-image: url('images/1D.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="1D"></button>
-                    <button
-                        style="background-image: url('images/2D.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="2D"></button>
-                    <button
-                        style="background-image: url('images/3D.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="3D"></button>
-                    <button
-                        style="background-image: url('images/4D.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="4D"></button>
-                    <button
-                        style="background-image: url('images/5D.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="5D"></button>
-                    <button
-                        style="background-image: url('images/6D.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="6D"></button>
-                    <button
-                        style="background-image: url('images/7D.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="7D"></button>
-                    <button
-                        style="background-image: url('images/8D.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="8D"></button>
-                    <button
-                        style="background-image: url('images/9D.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="9D"></button>
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
-                </div>
-                <div class="keyboard-row">
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
-                    <button
-                        style="background-image: url('images/east.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="East"></button>
-                    <button
-                        style="background-image: url('images/south.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="South"></button>
-                    <button
-                        style="background-image: url('images/west.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="West"></button>
-                    <button
-                        style="background-image: url('images/north.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="North"></button>
-                    <button
-                        style="background-image: url('images/red.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="Red"></button>
-                    <button
-                        style="background-image: url('images/green.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="Green"></button>
-                    <button
-                        style="background-image: url('images/white.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="White"></button>
-                    <button
-                        style="background-image: url('images/empty.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="Empty"></button>
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
-                </div>
-                <div class="keyboard-row">
 
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
-                    <button
-                        style="background-image: url('images/B1.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="B1"></button>
-                    <button
-                        style="background-image: url('images/B2.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="B2"></button>
-                    <button
-                        style="background-image: url('images/B3.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="B3"></button>
-                    <button
-                        style="background-image: url('images/B4.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="B4"></button>
-                    <button
-                        style="background-image: url('images/R1.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="R1"></button>
-                    <button
-                        style="background-image: url('images/R2.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="R2"></button>
-                    <button
-                        style="background-image: url('images/R3.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="R3"></button>
-                    <button
-                        style="background-image: url('images/R4.svg');background-size: contain; background-repeat: no-repeat;;"
-                        data-key="R4"></button>
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
+
+
+                <div id="Board-container">
+
+                    <div id="board">
+                        <div class="box" id="Um1" tile="None" ></div>
+                        <div class="box" id="Um2" tile="None" ></div>
+                        <div class="box" id="Um3" tile="None" ></div>
+                        <div class="box" id="Um4" tile="None" ></div>
+                        <div class="box" id="Um5" tile="None" ></div>
+                        <div class="box" id="Um6" tile="None" ></div>
+                        <div class="box" id="Um7" tile="None" ></div>
+                        <div class="box" id="Um8" tile="None" ></div>
+                        <div class="box" id="Um9" tile="None" ></div>
+                        <div class="box" id="Um10" tile="None" ></div>
+                        <div class="box" id="Um11" tile="None" ></div>
+                        <div class="box" id="Um12" tile="None" ></div>
+                        <div class="box" id="Um13" tile="None" ></div>
+                        <div class="box" id="Um14" tile="None" ></div>
+                        <div class="box" id="Um15" tile="None" ></div>
+                        <div class="box" id="Um16" tile="None" ></div>
+                        <div class="spacer-ming"></div>
+                        <div class="wu" id="Wu1" >胡</div>
+
+                    </div>
+                    <div id="secondary-board">
+                        <div id="ming-board">
+                            <div class="ming-board-row">
+                                <div class="ming" id="Ming1" tile="None" ;></div>
+                                <div class="ming" id="Ming2" tile="None" ;></div>
+                                <div class="ming" id="Ming3" tile="None" ;></div>
+                                <div class="gong" id="Gong1" gongStatus="No" tile="None">槓</div>
+                            </div>
+                            <div class="ming-board-row">
+                                <div class="ming" id="Ming4" tile="None" ;></div>
+                                <div class="ming" id="Ming5" tile="None" ;></div>
+                                <div class="ming" id="Ming6" tile="None" ;></div>
+                                <div class="gong" id="Gong2" gongStatus="No" tile="None">槓</div>
+                            </div>
+                            <div class="ming-board-row">
+                                <div class="ming" id="Ming7" tile="None" ;></div>
+                                <div class="ming" id="Ming8" tile="None"  ;></div>
+                                <div class="ming" id="Ming9" tile="None" ;></div>
+                                <div class="gong" id="Gong3" gongStatus="No" tile="None">槓</div>
+                            </div>
+                            <div class="ming-board-row">
+                                <div class="ming" id="Ming10" tile="None" ;></div>
+                                <div class="ming" id="Ming11" tile="None" ;></div>
+                                <div class="ming" id="Ming12" tile="None" ;></div>
+                                <div class="gong" id="Gong4" gongStatus="No" tile="None">槓</div>
+                            </div>
+                            <div class="ming-board-row">
+                                <div class="ming" id="Ming13" tile="None" ;></div>
+                                <div class="ming" id="Ming14" tile="None" ;></div>
+                                <div class="ming" id="Ming15" tile="None" ;></div>
+                                <div class="gong" id="Gong5" gongStatus="No" tile="None">槓</div>
+                            </div>
+                        </div>
+                        <div id="output">
+                        </div>
+                        <div id="third-board">
+                            <div class="fa-board">
+                                <div class="fa-board-row">
+                                    <div class="fa" id="Fa1" tile="None" ;>花</div>
+                                    <div class="fa" id="Fa2" tile="None" ;>花</div>
+                                    <div class="fa" id="Fa3" tile="None" ;>花</div>
+                                    <div class="fa" id="Fa4" tile="None" ;>花</div>
+                                </div>
+                                <div class="fa-board-row">
+                                    <div class="fa" id="Fa5" tile="None" ;>花</div>
+                                    <div class="fa" id="Fa6" tile="None" ;>花</div>
+                                    <div class="fa" id="Fa7" tile="None" ;>花</div>
+                                    <div class="fa" id="Fa8" tile="None" ;>花</div>
+                                </div>
+                            </div>
+                            <div>
+                                <select name="wind" id="wind">
+                                    <option value="東" selected>東</option>
+                                    <option value="南">南</option>
+                                    <option value="西">西</option>
+                                    <option value="北">北</option>
+
+                                </select>
+                                <label for="wind">風</label>
+                                <select name="place" id="place">
+                                    <option value="東" selected>東</option>
+                                    <option value="南">南</option>
+                                    <option value="西">西</option>
+                                    <option value="北">北</option>
+
+                                </select>
+                                <label for="place">位</label>
+                            </div>
+                            <div id="for自摸">
+                                <input type="number" id="莊連"value="-1" class="gongInput" >
+                                <label for="莊連">莊連(-1=非莊,0=1番莊)</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="wuWay" id="自摸" value="自摸" checked="true">
+                                <label for="自摸">自摸</label>
+                                <input type="radio" name="wuWay" id="出統" value="出統">
+                                <label for="出統">出統</label>
+                            </div>
+                            <div>
+                                <label for="eatway">食法</label>
+                                <select name="eatway" id="eatway">
+                                    <option value="無">無</option>
+                                    <option value="對碰">對碰</option>
+                                    <option value="獨獨">獨獨</option>
+                                    <option value="假獨">假獨</option>
+                                </select>
+                            
+                            </div>
+                            <div>
+                                <label for="wuSpeed">時序</label>
+                                <select name="wuSpeed" id="wuSpeed">
+                                    <option value="無">無</option>
+                                    <option value="天胡">天胡</option>
+                                    <option value="地胡">地胡</option>
+                                    <option value="人胡">人胡</option>
+                                    <option value="四只內">四只內</option>
+                                    <option value="七只內">七只內</option>
+                                    <option value="十只內">十只內</option>
+                                    <option value="河底撈月">河底撈月</option>
+                                    <option value="海底撈月">海底撈月</option>
+                                </select>
+                                
+                            </div>
+                            <div>
+                                <label for="聽牌">聽牌</label>
+                                <select name="聽牌" id="聽牌">
+                                    <option value="無">無聽</option>
+                                    <option value="立直">立直</option>
+                                    <option value="天聽">天聽</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="一發">一發</label>
+                                <input type="checkbox" id="一發">
+                                <label for="搶槓">搶槓</label>
+                                <input type="checkbox" id="搶槓">
+                            </div>
+                            <div id="for自摸">
+                                <input type="number" id="花上"value="0" class="gongInput" >
+                                <label for="花上">花</label>
+                                <input type="number" id="槓上" value="0" class="gongInput">
+                                <label for="槓上">槓上摸</label>
+                            </div>
+                            <div>
+                                <label for="絕章">絕章</label>
+                                <select name="絕章" id="絕章">
+                                    <option value="無">無</option>
+                                    <option value="四絕">四絕</option>
+                                    <option value="絕絕">絕絕</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div id="keyboard-container">
+                        <div class="keyboard-row">
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <button
+                                style="background-image: url('images/1B.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="1B"></button>
+                            <button
+                                style="background-image: url('images/2B.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="2B"></button>
+                            <button
+                                style="background-image: url('images/3B.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="3B"></button>
+                            <button
+                                style="background-image: url('images/4B.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="4B"></button>
+                            <button
+                                style="background-image: url('images/5B.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="5B"></button>
+                            <button
+                                style="background-image: url('images/6B.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="6B"></button>
+                            <button
+                                style="background-image: url('images/7B.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="7B"></button>
+                            <button
+                                style="background-image: url('images/8B.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="8B"></button>
+                            <button
+                                style="background-image: url('images/9B.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="9B"></button>
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                        </div>
+                        <div class="keyboard-row">
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <button
+                                style="background-image: url('images/1C.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="1C"></button>
+                            <button
+                                style="background-image: url('images/2C.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="2C"></button>
+                            <button
+                                style="background-image: url('images/3C.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="3C"></button>
+                            <button
+                                style="background-image: url('images/4C.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="4C"></button>
+                            <button
+                                style="background-image: url('images/5C.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="5C"></button>
+                            <button
+                                style="background-image: url('images/6C.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="6C"></button>
+                            <button
+                                style="background-image: url('images/7c.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="7C"></button>
+                            <button
+                                style="background-image: url('images/8C.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="8C"></button>
+                            <button
+                                style="background-image: url('images/9C.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="9C"></button>
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                        </div>
+                        <div class="keyboard-row">
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <button
+                                style="background-image: url('images/1D.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="1D"></button>
+                            <button
+                                style="background-image: url('images/2D.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="2D"></button>
+                            <button
+                                style="background-image: url('images/3D.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="3D"></button>
+                            <button
+                                style="background-image: url('images/4D.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="4D"></button>
+                            <button
+                                style="background-image: url('images/5D.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="5D"></button>
+                            <button
+                                style="background-image: url('images/6D.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="6D"></button>
+                            <button
+                                style="background-image: url('images/7D.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="7D"></button>
+                            <button
+                                style="background-image: url('images/8D.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="8D"></button>
+                            <button
+                                style="background-image: url('images/9D.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="9D"></button>
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                        </div>
+                        <div class="keyboard-row">
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <button
+                                style="background-image: url('images/east.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="East"></button>
+                            <button
+                                style="background-image: url('images/south.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="South"></button>
+                            <button
+                                style="background-image: url('images/west.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="West"></button>
+                            <button
+                                style="background-image: url('images/north.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="North"></button>
+                            <button
+                                style="background-image: url('images/red.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="Red"></button>
+                            <button
+                                style="background-image: url('images/green.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="Green"></button>
+                            <button
+                                style="background-image: url('images/white.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="White"></button>
+                            <button
+                                style="background-image: url('images/empty.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="Empty"></button>
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                        </div>
+                        <div class="keyboard-row">
+
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <button
+                                style="background-image: url('images/B1.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="B1"></button>
+                            <button
+                                style="background-image: url('images/B2.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="B2"></button>
+                            <button
+                                style="background-image: url('images/B3.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="B3"></button>
+                            <button
+                                style="background-image: url('images/B4.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="B4"></button>
+                            <button
+                                style="background-image: url('images/R1.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="R1"></button>
+                            <button
+                                style="background-image: url('images/R2.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="R2"></button>
+                            <button
+                                style="background-image: url('images/R3.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="R3"></button>
+                            <button
+                                style="background-image: url('images/R4.svg');background-size: contain; background-repeat: no-repeat;;"
+                                data-key="R4"></button>
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+
+                        </div>
+                        <div class="keyboard-row" id="last-keyboard-row" ;>
+                            <button data-key="Enter" class="wide-button" id="enter-button">Enter</button>
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+
+                            
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <button data-key="Reset" class="wide-button">Reset</button>
+                            <div class="spacer-half"></div>
+                            
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <div class="spacer-half"></div>
+                            <button data-key="Delete" class="wide-button">Delete</button>
+                        </div>
+                    </div>
 
                 </div>
-                <div class="keyboard-row" id="last-keyboard-row" ;>
-                    <button data-key="Enter" class="wide-button" id="enter-button">Enter</button>
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
 
-                    <button data-key="MingCheung" class="wide-button">明章</button>
-                    <div class="spacer-half"></div>
-                    <button data-key="UmCheung" class="wide-button">暗章</button>
-                    <div class="spacer-half"></div>
-                    <button data-key="FaCheung" class="wide-button">花</button>
 
-                    <button data-key="WuCheung" class="wide-button">糊牌</button>
-                    <div class="spacer-half"></div>
-                    <div class="spacer-half"></div>
-                    <button data-key="Delete" class="wide-button">Delete</button>
+
+
+
+
+            </div>
+
+            <div id="Output" class="tabcontent">
+                <div id="output-board">
+
+
+
                 </div>
             </div>
 
+            <div id="About" class="tabcontent">
+                <div id="AboutUs">
+                    <div>整出黎純好玩</div>
+                    <div>有咩意見請IG DM @JumperOsm</div>
+                    <div>唔包會改</div>
+                    <div>Namaste!</div>
+                    <div>(ㆆᴗㆆ)</div>
+
+
+                </div>
+            </div>
+
+            <div id="Table" class="tabcontent">
+                <div id="buttons-holder">
+                <button id="ExportButton" class="big-button">Export</button>
+                
+                <div id="ImportExportOverLay" >
+                    <div>請另外保全以下字串</div>
+                    <div id="Export"></div>
+                    <div>請輸入記錄</div>
+                    <div>
+                        <input id="Import" width="100%"/>
+                    </div>
+                    <button id="confirmButton" class="overlay-button">Confirm</button>
+                    <button id="closeButton" class="overlay-button">Close</button>
+                </div>
+                </div>
+                <div id="table-container">
+                    <table id="farn-table">
+                        <tr>
+
+                            <th colspan="2">牌型</th>
+                            <th width="30px">
+                                <input type="checkbox" class="YN" id="cbAll" onclick="cbClickAll()" />
+                            </th>
+                            <TH width="50px">明暗</TH>
+                            <TH>番數</TH>
+                            <TH>說明</TH>
+                            <TH>輸入</TH>
+                        </tr>
+                        <tr>
+                            <td colspan="2">底</td>
+                            <td rowspan="4"></td>
+                            <td rowspan="43"></td>
+                            <td class="farnNumber" id="底f">5</td>
+                            <td>每次胡牌的基礎番數</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">莊</td>
+                            <td class="farnNumber" id="莊f">2n+1</td>
+                            <td>n為連莊局數</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td width="1px" rowspan="11">花。字</td>
+                            <td>無花</td>
+                            <td class="farnNumber" id="無花f">2</td>
+                            <td>胡牌組合中沒有花牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>花</td>
+                            <td class="farnNumber" id="花f">2</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>正花</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="正花y" class="YN" />
+                            </td>
+                            <td class="farnNumber" id="正花f">1</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td>七搶一/一搶七</td>
+                            <td rowspan="4"></td>
+                            <td class="farnNumber" id="搶花f">20</td>
+                            <td>於摸得最後一隻花時，出現其中一家有七隻花，另一家有一隻花的情況。
+                                摸最後一隻花的一家榮胡，另一家被視為出銃。如打出第一隻牌前已遇到此情況，
+                                則以摸牌次序決定 (較後摸牌一家摸得最後一隻花)。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td>兩台花 (花胡)</td>
+                            <td class="farnNumber" id="兩台花f">30</td>
+                            <td>摸到八隻花。必須即時決定是否胡牌，如決定不胡牌，則全局
+                                不能再以此牌型胡牌。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>無字</td>
+                            <td class="farnNumber" id="無字f">2</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>風</td>
+                            <td class="farnNumber" id="風牌f">2</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>正圈風</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="正圈風y" class="YN" />
+                            </td>
+                            <td class="farnNumber" id="正圈風f">1</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>正位風</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="正位風y" class="YN" />
+                            </td>
+                            <td class="farnNumber" id="正位風f">1</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>三元牌</td>
+                            <td rowspan="32"></td>
+                            <td class="farnNumber" id="三元牌f">2</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>無字花</td>
+                            <td class="farnNumber" id="無字花f">10</td>
+                            <td>不可複計無字/無花</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="8">時序</td>
+                            <td>天胡</td>
+                            <td class="farnNumber" id="天胡f">120</td>
+                            <td>莊家起手自摸胡牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>地胡</td>
+                            <td class="farnNumber" id="地胡f">100</td>
+                            <td>閒家榮胡莊家打出的第一隻牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>人胡</td>
+                            <td class="farnNumber" id="人胡f">80</td>
+                            <td>閒家以門清形式第一隻自摸胡牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>四只內</td>
+                            <td class="farnNumber" id="四只內f">40</td>
+                            <td>胡牌時牌池內只有四隻牌或以下，榮胡牌計算在內。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>七只內</td>
+                            <td class="farnNumber" id="七只內f">20</td>
+                            <td>胡牌時牌池內只有七隻牌或以下，榮胡牌計算在內。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>十只內</td>
+                            <td class="farnNumber" id="十只內f">10</td>
+                            <td>胡牌時牌池內只有十隻牌或以下，榮胡牌計算在內。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>河底撈月</td>
+                            <td class="farnNumber" id="河底撈月f">10</td>
+                            <td>最後一隻榮胡胡牌。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>海底撈月</td>
+                            <td class="farnNumber" id="海底撈月f">20</td>
+                            <td>最後一隻自摸胡牌。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="3">一炮多響</td>
+                            <td>雙響</td>
+                            <td class="farnNumber" id="雙響f">5</td>
+                            <td>兩家同時胡牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>三響</td>
+                            <td class="farnNumber" id="三響f">10</td>
+                            <td>三家同時胡牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>自摸反響</td>
+                            <td class="farnNumber" id="自摸反響f">10/20</td>
+                            <td>於被雙響或三響後的一局自摸胡牌。反響只適用於上一局雙響
+                                或三響的兩/三家。 </td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+
+                        <tr>
+                            <td rowspan="4">聽牌</td>
+                            <td>聽牌</td>
+                            <td class="farnNumber" id="聽牌f">5</td>
+                            <td>聽牌後不可再加槓及換手牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>一發</td>
+                            <td class="farnNumber" id="一發f">5</td>
+                            <td>聽牌後在下次摸牌時或之前胡牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>門清聽</td>
+                            <td class="farnNumber" id="門清聽f">15</td>
+                            <td>不可複計門清及聽</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>天聽</td>
+                            <td class="farnNumber" id="天聽f">40</td>
+                            <td>以門清形式摸入第一隻牌後聽牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="4">門清。求人</td>
+                            <td>門清</td>
+                            <td class="farnNumber" id="門清f">5</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>門清自摸</td>
+                            <td class="farnNumber" id="門清自摸f">3</td>
+                            <td>不可複計自摸</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>全求人</td>
+                            <td class="farnNumber" id="全求人f">30</td>
+                            <td>有五組已副露的順子或刻子後榮胡胡牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>半求人</td>
+                            <td class="farnNumber" id="半求人f">20</td>
+                            <td>有五組已副露的順子或刻子後自摸胡牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">將眼</td>
+                            <td class="farnNumber" id="將眼f">2</td>
+                            <td>以二/五/八的數字牌為眼</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="10">胡牌形式</td>
+                            <td>對碰</td>
+                            <td class="farnNumber" id="對碰f">2</td>
+                            <td>以兩對形式胡牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>假獨</td>
+                            <td class="farnNumber" id="假獨f">1</td>
+                            <td>以邊張/中洞/獨聽的形式胡牌，但可胡牌的牌張多於一隻</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>獨獨</td>
+                            <td class="farnNumber" id="獨獨f">2</td>
+                            <td>以邊張/中洞/獨聽的形式胡牌，而可胡牌的牌張亦只得一隻</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>自摸</td>
+                            <td class="farnNumber" id="自摸f">1</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>花上胡</td>
+                            <td class="farnNumber" id="花上胡f">1</td>
+                            <td>補花後自摸胡牌，每隻花可以覆計</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>槓上胡</td>
+                            <td class="farnNumber" id="槓上胡f">5</td>
+                            <td>打出明槓的槓上自摸，則打出明槓者被視為出銃</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>摃上摃胡</td>
+                            <td class="farnNumber" id="摃上摃胡f">5(n-1)</td>
+                            <td>複計摃上胡</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>搶摃食胡</td>
+                            <td class="farnNumber" id="搶摃f">5</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>四絕</td>
+                            <td class="farnNumber" id="四絕f">5</td>
+                            <td>胡牌牌張已打出、已副露三隻</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>絕絕</td>
+                            <td class="farnNumber" id="絕絕f">10</td>
+                            <td>胡牌牌張為可胡牌的牌張中已打出、已副露及胡牌者手牌中的
+                                最後一隻</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <!-- /////////////////////////////////////////////順子牌型////////////////////////////////////////////////////////////////////////////// -->
+
+                        <tr>
+                            <td colspan="7" class="sub-header">順子牌型</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">雞胡</td>
+                            <td>雞胡</td>
+                            <td rowspan="5"></td>
+                            <td rowspan="4"></td>
+                            <td class="farnNumber" id="雞胡f">30</td>
+                            <td>胡牌時只有無花或一隻花。莊、拉、底、雙響/三響及反響不計
+                                算在內，並可於計算大雞胡的番數後再另外計算。聽牌後
+                                不能計算雞胡。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>自摸雞胡</td>
+                            <td class="farnNumber" id="自摸雞胡f">20</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2">平胡</td>
+                            <td>平胡</td>
+                            <td class="farnNumber" id="平胡f">5</td>
+                            <td>胡牌組合中只有順子及眼</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>無字花平胡(大平胡)</td>
+                            <td class="farnNumber" id="大平胡f">20</td>
+                            <td>不可複計平胡及無字花</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td rowspan="5">同順</td>
+                            <td>般高</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="般高m" class="MU" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="般高f">5</td>
+                            <td>相同的順子。如有三/四般高，須以𝐶2
+                                𝑛形式分拆成 3/6 個組合分
+                                別以明/暗複計</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>小雙般高</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="小雙般高y" class="YN" checked="checked"/>
+                            </td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="小雙般高m" class="MU" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="小雙般高f">10</td>
+                            <td>般高加上相連的數字為眼</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>兩相逢(順子)</td>
+                            <td rowspan="2"></td>
+                            <td></td>
+                            <td class="farnNumber" id="兩相逢f">3</td>
+                            <td>由筒索萬三門其中兩門組成兩組相同數字的順子</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>三相逢(順子)</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="三相逢m" class="MU" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="三相逢f">10</td>
+                            <td>由筒索萬三門組成三組相同數字的順子</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>全姊妹</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="全姊妹y" class="YN" checked="checked"/>
+                            </td>
+                            <td></td>
+                            <td class="farnNumber" id="全姊妹f">20</td>
+                            <td>一組三相逢加一組(兩相逢/般高)</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+
+                        <tr>
+                            <td rowspan="6">步高．龍</td>
+                            <td>步步高</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="步步高y" class="YN" checked="checked"/>
+                            </td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="步步高m" class="MU" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="步步高f">5</td>
+                            <td>由筒索萬三門組成的三組數字差同為一的連續順子。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td>二步高</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="二步高y" class="YN" />
+                            </td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="二步高m" class="MU" />
+                            </td>
+                            <td class="farnNumber" id="二步高f">5</td>
+                            <td>由筒索萬三門組成的三組數字差同為二的連續順子。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td>雜龍</td>
+                            <td></td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="雜龍m" class="MU" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="雜龍f">5</td>
+                            <td>由筒索萬三門組成的三組數字差同為三的連續順子。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>同色步步高</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="同色步步高y" class="YN" checked="checked"/>
+                            </td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="同色步步高m" class="MU" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="同色步步高f">10</td>
+                            <td>由筒索萬其中一門組成的三組數字差同為一的連續順子</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>同色二步高</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="同色二步高y" class="YN" />
+                            </td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="同色二步高m" class="MU" />
+                            </td>
+                            <td class="farnNumber" id="同色二步高f">10</td>
+                            <td>由筒索萬其中一門組成的三組數字差同為二的連續順子</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>清龍</td>
+                            <td></td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="清龍m" class="MU" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="清龍f">10</td>
+                            <td>由筒索萬其中一門組成的三組數字差同為三的連續順子</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <!-- ///////////////////////////////////////////////////////////////////刻。槓牌型/////////////////////////////////////////////////////// -->
+
+                        <tr>
+                            <td colspan="7" class="sub-header">刻。槓牌型</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">對對胡</td>
+                            <td rowspan="12"></td>
+                            <td rowspan="22"></td>
+                            <td class="farnNumber" id="對對胡f">40</td>
+                            <td>胡牌組合中只有刻子、槓子及眼</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="3">兄弟</td>
+                            <td>兄弟(刻子)</td>
+                            <td class="farnNumber" id="兄弟f">5</td>
+                            <td>由筒索萬三門其中兩門組成兩組相同數字的刻子或槓子</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>小三兄弟(刻子)</td>
+                            <td class="farnNumber" id="小三兄弟f">10</td>
+                            <td>由筒索萬三門組成相同數字的刻子、槓子或眼</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>大三兄弟(刻子)</td>
+                            <td class="farnNumber" id="大三兄弟f">15</td>
+                            <td>由筒索萬三門組成相同數字的刻子或槓子</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="10">姊妹．連碰</td>
+                            <td>姊妹</td>
+                            <td class="farnNumber" id="姊妹f">5</td>
+                            <td>兩組連續數字的刻子或槓子</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>小三姊妹</td>
+                            <td class="farnNumber" id="小三姊妹f">10</td>
+                            <td>三組連續數字的刻子、槓子或眼</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>三姊妹</td>
+                            <td class="farnNumber" id="三姊妹f">20</td>
+                            <td>三組連續數字的刻子或槓子</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>小四姊妹</td>
+                            <td class="farnNumber" id="小四姊妹f">30</td>
+                            <td>四組連續數字的刻子、槓子或眼</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>四姊妹</td>
+                            <td class="farnNumber" id="四姊妹f">40</td>
+                            <td>四組連續數字的刻子或槓子</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>小五姊妹</td>
+                            <td class="farnNumber" id="小五姊妹f">60</td>
+                            <td>五組連續數字的刻子、槓子或眼</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>五姊妹</td>
+                            <td class="farnNumber" id="五姊妹f">80</td>
+                            <td>五組連續數字的刻子或槓子</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>全連碰</td>
+                            <td class="farnNumber" id="全連碰f">120</td>
+                            <td>六組連續數字的刻子、槓子或眼</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>小雜連碰</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="小雜連碰y" class="YN" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="小雜連碰f">5</td>
+                            <td>由筒索萬三門組成連續數字的刻子、槓子或眼</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>雜連碰</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="雜連碰y" class="YN" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="雜連碰f">10</td>
+                            <td>由筒索萬三門組成連續數字的刻子或槓子</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td rowspan="5">暗刻</td>
+                            <td>二暗刻</td>
+                            <td rowspan="8"></td>
+                            <td class="farnNumber" id="二暗刻f">5</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>三暗刻</td>
+                            <td class="farnNumber" id="三暗刻f">15</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>四暗刻</td>
+                            <td class="farnNumber" id="四暗刻f">30</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>五暗刻</td>
+                            <td class="farnNumber" id="五暗刻f">60</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>坎坎胡</td>
+                            <td class="farnNumber" id="坎坎胡f">120</td>
+                            <td>需要自摸</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="3">槓</td>
+                            <td>明槓</td>
+                            <td class="farnNumber" id="明槓f">1</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>暗槓</td>
+                            <td class="farnNumber" id="暗槓f">1</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>十八羅漢</td>
+                            <td class="farnNumber" id="十八羅漢f">120</td>
+                            <td>五組槓子</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <!-- ///////////////////////////////////////////////////////////////////四歸牌型/////////////////////////////////////////////////////// -->
+
+                        <tr>
+                            <td colspan="7" class="sub-header">四歸牌型</td>
+
+                        </tr>
+                        <tr>
+                            <td rowspan="3">四歸</td>
+                            <td>四歸一</td>
+                            <td rowspan="3"></td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="四歸一m" class="MU" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="四歸一f">5</td>
+                            <td>胡牌組合有四隻相同的牌，並出現在一組順子及一組刻子內</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>四歸二</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="四歸二m" class="MU" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="四歸二f">10</td>
+                            <td>胡牌組合有四隻相同的牌，並出現在兩組順子及眼內</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>四歸四</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="四歸四m" class="MU" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="四歸四f">20</td>
+                            <td>胡牌組合有四隻相同的牌，並出現在四組順子內。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <!-- ///////////////////////////////////////////////////////////////////缺。齊。混。清牌型/////////////////////////////////////////////////////// -->
+
+                        <tr>
+                            <td colspan="7" class="sub-header">缺。齊。混。清牌型</td>
+
+                        </tr>
+                        <tr>
+                            <td rowspan="3">缺</td>
+                            <td>斷么</td>
+                            <td rowspan="2"></td>
+                            <td rowspan="22"></td>
+                            <td class="farnNumber" id="斷么f">5</td>
+                            <td>胡牌組合中沒有風元、幺九牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>缺一門</td>
+                            <td class="farnNumber" id="缺一門f">5</td>
+                            <td>胡牌組合中沒有風元牌，並只有筒索萬三門其中兩門的牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>缺五</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="缺五y" class="YN" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="缺五f">10</td>
+                            <td>胡牌組合中沒有風元牌、五筒、五索及五萬</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="4">齊</td>
+                            <td>五門齊</td>
+                            <td></td>
+                            <td class="farnNumber" id="五門齊f">10</td>
+                            <td>胡牌組合中有筒索萬三門、風牌及元牌。其中一門只
+                                有兩隻。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>大五門齊</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="大五門齊y" class="YN" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="大五門齊f">15</td>
+                            <td>胡牌組合中有筒索萬三門、風牌及元牌。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>七門齊</td>
+                            <td></td>
+                            <td class="farnNumber" id="七門齊f">15</td>
+                            <td>為五門齊加上兩類花牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>大七門齊</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="大七門齊y" class="YN" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="大七門齊f">20</td>
+                            <td>為大五門齊加上兩類花牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+
+                        <tr>
+                            <td rowspan="3">一色</td>
+                            <td>混一色</td>
+                            <td rowspan="3"></td>
+                            <td class="farnNumber" id="混一色f">40</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>清一色</td>
+                            <td class="farnNumber" id="清一色f">80</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>字一色</td>
+                            <td class="farnNumber" id="字一色f">120</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2">帶</td>
+                            <td>混帶</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="混帶y" class="YN" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="混帶f">30</td>
+                            <td>胡牌組合中只有風元牌及每一組牌組均含有同一個數字的非風
+                                元牌。複計時第二及第三個混帶計½及¼</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>全帶</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="全帶y" class="YN" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="全帶f">60</td>
+                            <td>胡牌組合中沒有風元牌，且每一組牌組均含有同一個數字的
+                                牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="4">全大/小</td>
+                            <td>混全大</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="混全大y" class="YN" />
+                            </td>
+                            <td class="farnNumber" id="混全大f">10</td>
+                            <td>胡牌組合中只有風元牌及以「六」、「七」、「八」或「九」組成
+                                的非風元牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>全大</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="全大y" class="YN" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="全大f">60</td>
+                            <td>胡牌組合中沒有風元牌，及所有牌只以「六」、「七」、「八」或
+                                「九」組成</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>混全小</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="混全小y" class="YN" />
+                            </td>
+                            <td class="farnNumber" id="混全小f">10</td>
+                            <td>胡牌組合中只有風元牌及以「一」、「二」、「三」或「四」組成
+                                的非風元牌。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>全小</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="全小y" class="YN" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="全小f">60</td>
+                            <td>胡牌組合中沒有風元牌，及所有牌只以「一」、「二」、「三」或
+                                「四」組成</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="6">么</td>
+                            <td>老少</td>
+                            <td rowspan="6"></td>
+                            <td class="farnNumber" id="老少f">3</td>
+                            <td>由筒索萬同一門的「一二三」及「七八九」的順子</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>老少碰</td>
+                            <td class="farnNumber" id="老少碰f">5</td>
+                            <td>由筒索萬同一門的「一」及「九」的刻子。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>混帶么</td>
+                            <td class="farnNumber" id="混帶么f">30</td>
+                            <td>胡牌組合中只有風元牌及每一組牌組最少帶有一隻幺九牌組成
+                                的非風元牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>全帶么</td>
+                            <td class="farnNumber" id="全帶么f">80</td>
+                            <td>胡牌組合中沒有風元牌，及每一組牌組最少帶有一隻幺九牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>混么</td>
+                            <td class="farnNumber" id="混么f">60</td>
+                            <td>胡牌組合中只有風元牌及全為么九的非風元牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>清么</td>
+                            <td class="farnNumber" id="清么f">120</td>
+                            <td>胡牌組合中只有幺九牌 複計對對胡</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <!-- ///////////////////////////////////////////////////////////////////風元。役牌/////////////////////////////////////////////////////// -->
+
+                        <tr>
+                            <td colspan="7" class="sub-header">風元。役牌</td>
+
+                        </tr>
+                        <tr>
+                            <td rowspan="6">風。元</td>
+                            <td>小三元</td>
+                            <td rowspan="13"></td>
+                            <td rowspan="19"></td>
+                            <td class="farnNumber" id="小三元f">30</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>大三元</td>
+                            <td class="farnNumber" id="大三元f">60</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>小三風</td>
+                            <td class="farnNumber" id="小三風f">20</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>大三風</td>
+                            <td class="farnNumber" id="大三風f">40</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>小四喜</td>
+                            <td class="farnNumber" id="小四喜f">80</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>大四喜</td>
+                            <td class="farnNumber" id="大四喜f">120</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2">十三么</td>
+                            <td>十三么</td>
+                            <td class="farnNumber" id="十三么f">120</td>
+                            <td>以十三隻不同的幺九牌及一組順子、刻子或暗槓組成，並以門
+                                清形式胡牌。眼為該十三隻幺九牌其中一隻。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>十三飛</td>
+                            <td class="farnNumber" id="十三飛f">10</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">不搭</td>
+                            <td>十六不搭</td>
+                            <td class="farnNumber" id="十六不搭f">60</td>
+                            <td>以七隻不同的風元牌及筒索萬三門每一門三隻，且數字差不少
+                                於三組成。眼為該十六隻牌其中一隻。如筒索萬三門每一門三
+                                隻的數子為「一四七」、「二五八」及「三六九」</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>不搭三相逢</td>
+                            <td class="farnNumber" id="不搭三相逢f">10</td>
+                            <td>不搭筒索萬三門每一門數字均一樣</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>不搭雜龍</td>
+                            <td class="farnNumber" id="不搭雜龍f">10</td>
+                            <td>不搭筒索萬三門每一門三隻的數子為「一四七」、「二五八」及「三六九」</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>不搭十六飛</td>
+                            <td class="farnNumber" id="不搭十六飛f">10</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td rowspan="7">嚦咕</td>
+                            <td>嚦咕嚦咕</td>
+                            <td class="farnNumber" id="嚦咕嚦咕f">50</td>
+                            <td>以七對及一組刻子組成，並以門清形式胡牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>嚦咕嚦咕四歸一</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="嚦咕嚦咕四歸一y" class="YN" checked="checked"/>
+                            </td>
+                            <td class="farnNumber" id="嚦咕嚦咕四歸一f">10</td>
+                            <td>嚦咕有兩對為同一隻牌</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>嚦咕嚦咕小三兄弟</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="嚦咕嚦咕小三兄弟y" class="YN" />
+                            </td>
+                            <td class="farnNumber" id="嚦咕嚦咕小三兄弟f">5</td>
+                            <td>嚦咕中一組刻子及兩對為同一數字</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>嚦咕嚦咕小三姊妹</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="嚦咕嚦咕小三姊妹y" class="YN" />
+                            </td>
+                            <td class="farnNumber" id="嚦咕嚦咕小三姊妹f">5</td>
+                            <td>嚦咕中一組刻子及兩對為同一花式而相鄰數字</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>嚦咕嚦咕小三元</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="嚦咕嚦咕小三元y" class="YN" />
+                            </td>
+                            <td class="farnNumber" id="嚦咕嚦咕小三元f">15</td>
+                            <td>嚦咕中一組刻子及兩對各為中、發、白</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>嚦咕嚦咕小四喜</td>
+                            <td class="cbCell">
+                                <input type="checkbox" id="嚦咕嚦咕小四喜y" class="YN" />
+                            </td>
+                            <td class="farnNumber" id="嚦咕嚦咕小四喜f">20</td>
+                            <td>嚦咕中一組刻子及三對各為東、南、西、北</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>嚦咕嚦咕八飛</td>
+                            <td></td>
+                            <td class="farnNumber" id="嚦咕嚦咕八飛f">10</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td colspan="7" class="sub-header" ;>即收。即罰</td>
+
+                        </tr>
+                        <tr>
+                            <td rowspan="4">即收</td>
+                            <td>一台草</td>
+                            <td colspan="2" rowspan="9"></td>
+                            <td>底</td>
+                            <td>有一二三四不同門的花</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>一台花</td>
+                            <td>兩底</td>
+                            <td>有一二三四同門的花</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>圍骰</td>
+                            <td>底</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>暗槓</td>
+                            <td>底</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">即罰</td>
+                            <td>詐胡</td>
+                            <td>30</td>
+                            <td>如果有玩家叫胡，則當該玩家以最大一隻榮胡。如低於30番則以30番計算</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>追牌</td>
+                            <td>底/兩底</td>
+                            <td>四位玩家連續打一隻相同的牌，則罰第一位打的玩家。追風元/
+                                么九牌罰 1 底，其他牌罰 2 底。</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>一二三</td>
+                            <td>底</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>叫碰不碰</td>
+                            <td>底</td>
+                            <td></td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>錯暗槓</td>
+                            <td>兩底</td>
+                            <td>出示暗槓的四隻牌但四隻牌不相同。重新洗牌前未有出示暗槓
+                                當錯暗槓論</td>
+                            <th>
+                                <input type="number" class="farnInput" />
+                            </th>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 
