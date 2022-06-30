@@ -80,7 +80,6 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    grid-gap: 5px;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -134,15 +133,34 @@ header {
 }
 
 
+@media screen and (min-width: 540px)  {
+    .gong, .fa, .ming , .box ,.output-tile , .wu {
+        min-width: 32px;
+        min-height: 40px;
+    }
+    .keyboard-row button {
+        height: 50px;
+    }
+}
 
+@media screen and (max-width: 540px)  {
+    .gong, .fa, .ming , .box ,.output-tile , .wu {
+        min-width: 16px;
+        min-height: 20px;
+    }
+    .keyboard-row button {
+        height: 40px;
+    }
+    #output{
+        font-size: 0.5rem;
+    }
+}
 
 
 
 .gong, .fa, .ming , .box ,.output-tile , .wu {
     border: 2px solid rgb(58, 58, 60);
     font-weight: normal;
-    min-width: 32px;
-    min-height: 40px;
     font-size: 0.5rem;
     color: aliceblue;
     touch-action: manipulation;
@@ -183,7 +201,7 @@ header {
     font-weight: bold;
     border: 0;
     padding: 0;
-    height: 40px;
+    
     cursor: pointer;
     display: flex;
     background-color: black;
