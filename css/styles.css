@@ -344,3 +344,7 @@ td.sub-header {
 #Export{
     font-size: 5px;
 }
+
+.sum, .c_sum{
+    text-align: center;
+}
