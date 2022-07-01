@@ -827,6 +827,32 @@ document.addEventListener("DOMContentLoaded", () => {
             if (uniq.length === 16) {
                 populateFarn('十三飛', calcDiv, 1)
             }
+            count = []
+                um.forEach(tile => {
+                    count[tile] = (count[tile] || 0) + 1;
+                });
+                Object.values(count).forEach(val => {
+                    if (val === 4) {
+                        populateFarn('四歸一', calcDiv, 1)
+                        populateFarn('混么', calcDiv, 1)
+                    }
+                })
+                let yiu13arr = um.map(x => x)
+                let tilearr = ['East', 'South', 'West', 'North', 'Green', 'Red', 'White']
+                tilearr.forEach(i => {
+                    yiu13arr = yiu13arr.filter(x => x !== i)
+                })
+    
+                uniq = [...new Set(yiu13arr)];
+                if((uniq.includes('2B') &&uniq.includes('3B') && !uniq.includes('4B'))||
+                (uniq.includes('2C') &&uniq.includes('3C') && !uniq.includes('4C'))||
+                (uniq.includes('2D') &&uniq.includes('3D') && !uniq.includes('4D'))||
+                (uniq.includes('7B') &&uniq.includes('8B') && !uniq.includes('6B'))||
+                (uniq.includes('7C') &&uniq.includes('8C') && !uniq.includes('6C'))||
+                (uniq.includes('7D') &&uniq.includes('8D') && !uniq.includes('6D'))){
+                    populateFarn('混帶么', calcDiv, 1)
+                }
+
         } else if (specialWu === 'dap16') {
             populateFarn('十六不搭', calcDiv, 1)
             //十六飛
@@ -2020,7 +2046,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (umCombo === combo) {
                 temp2 = true
             }
-            if (specialWu !== 'liguOnly') {
+            if (specialWu !== 'liguOnly' && specialWu !== 'yiu13') {
                 if (combo === 2) {
                     populateFarn('四歸一', calcDiv, 1, [i], temp2)
                 } else if (combo === 3) {
